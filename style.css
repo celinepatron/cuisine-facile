@@ -1,1 +1,114 @@
 /* cuisine facile */
+:root {
+  --color-blue: #1d4758;
+  --color-orange: #f4a261;
+  --color-lightCream: #fff0e5;
+  --color-white: #ffff;
+
+  --fnt-familly: "Montserrat", sans-serif;
+}
+
+* {
+  max-width: 100vw;
+  margin: 0;
+}
+
+img {
+  width: 50px;
+}
+/* header Home page */
+.header_home {
+  background-image: url(./assets/images/headerImg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 30vh;
+}
+.headerHome_nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 50%;
+  margin: 0;
+}
+
+.header_menu_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.header_homelogo {  
+  display: flex;
+  justify-self: flex-start;
+  height: 70%;
+  width: 30%;
+  margin: 5% 0;
+}
+
+.logo_img_home {
+  width: auto;
+}
+
+.header_home_sect_pres {
+  margin:auto 5%;
+}
+
+.headerHome_sect_catphrase {
+  color: var(--color-orange);
+  font-family: var(--fnt-familly);
+  width: 65%;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.headerHome_sect_delivery {
+  color: var(--color-white);
+  font-family: var(--fnt-familly);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+/* header other pages */
+
+.header_other_page {
+  background-color: var(--color-white);
+  display: flex;
+  height: 13vh;
+}
+.header_menu {
+  background-color: var(--color-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin-left:.2rem;
+}
+
+.logo {
+  width: 90%;
+}
+.logo_img {
+  width: 80%;
+  margin: 0 2rem;
+}
+
+.header_login_search_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top:.6rem ;
+
+}
+.logIn_img,
+.search_img {
+  width: 80%;
+}
+
+footer {
+  display: flex;
+  background-color: var(--color-blue);
+}
+
+@media (min-width: 601px) {
+}
