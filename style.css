@@ -13,13 +13,11 @@ body {
   max-width: 100vw;
   margin: 0;
   font-family: var(--fnt-familly-ppal);
-
 }
-
 
 /* header Home page */
 .header_home {
-  background-image: url(./assets/images/headerImg.png);
+  background-image: url(./assets/images/headerImg.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 30vh;
@@ -38,7 +36,17 @@ body {
   width: 20%;
   height: 70%;
 }
-
+.headerHomeNavbar {
+  display: none;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.headerHomeNav_link {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-orange);
+}
 .header_homelogo {
   display: flex;
   justify-self: flex-start;
@@ -52,25 +60,34 @@ body {
 }
 
 .header_home_sect_pres {
-  margin: 9% auto 0 auto;
+  margin: 5% auto 0 auto;
   padding: 0;
 }
 
 .headerHome_sect_catphrase {
   color: var(--color-orange);
-  width: 65%;
+  width: 55%;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .headerHome_sect_delivery {
   color: var(--color-white);
   font-family: var(--fnt-familly);
-  margin: -5% auto;
+  margin: -2% auto;
   font-weight: 300;
   font-size: 0.8rem;
 }
-
+.headerHome_sect_todaysRecipe {
+  display: none;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border-radius: 10px;
+  margin: 15% 2%;
+  width: 25%;
+  height: 2.5rem;
+}
+/* ---------------------- */
 /* header other pages */
 
 .header_other_page {
@@ -94,7 +111,17 @@ body {
   width: 80%;
   margin: 0 2rem;
 }
-
+.headerOtherNavbar {
+  display: none;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.headerOtherNav_link {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-blue);
+}
 .header_login_search_icon {
   display: flex;
   flex-direction: column;
@@ -105,7 +132,9 @@ body {
 .search_img {
   width: 80%;
 }
+/* ---------------------- */
 
+/* footer */
 footer {
   width: 100vw;
   position: fixed;
@@ -144,7 +173,7 @@ footer {
 }
 .nav_cvg_item {
   text-align: center;
-  margin: auto ;
+  margin: auto;
   font-size: 0.8rem;
   color: var(--color-white);
 }
@@ -170,5 +199,142 @@ footer {
   text-align: center;
   font-size: 0.8rem;
 }
+/* ----------end footer------------ */
+
 @media (min-width: 601px) {
+  /* header Home page */
+  .header_home {
+    height: 60vh;
+  }
+
+  .header_homelogo {
+    height: 15vh;
+  }
+
+  .header_home_sect_pres {
+    margin: 8% auto;
+  }
+
+  .headerHome_sect_delivery {
+    margin-top: -2%;
+  }
+  .headerHome_sect_todaysRecipe {
+    display: block;
+    margin: 10% 5%;
+  }
+  /* ---------------------- */
+  /* header other pages */
+
+  .header_other_page {
+    height: 16vh;
+  }
+
+  .logo_img {
+    height: 100%;
+    margin: 0;
+  }
+  .headerOtherNavbar {
+    display: none;
+  }
+  .header_login_search_icon {
+    width: auto;
+  }
+  /* ---------------------- */
+
+  /* footer */
+  footer {
+    height: 16vh;
+  }
+
+  .nav_cvg_item {
+    font-size: 1.2rem;
+  }
+
+  .footer_copyright {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* header Home page */
+  .header_menu_home {
+    display: none;
+  }
+  .headerHomeNavbar {
+    display: flex;
+    width: 40%;
+  }
+  .headerHomeNav_link {
+    font-size: 1.2rem;
+  }
+  .header_homelogo {
+    height: 15vh;
+  }
+
+  .header_home_sect_pres {
+    margin: 2% 1% 0 2%;
+    width: 50%;
+  }
+
+  .headerHome_sect_catphrase {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+
+  .headerHome_sect_delivery {
+    font-size: 1.2rem;
+    margin-top: -1.8%;
+  }
+  .headerHome_sect_todaysRecipe {
+    margin: 7% 10%;
+    width: 30%;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  /* ---------------------- */
+  /* header other pages */
+  .header_menu {
+    display: none;
+  }
+
+  .logo {
+    margin: 1% 2%;
+    width: auto;
+    width: 15vw;
+  }
+
+  .headerOtherNavbar {
+    display: flex;
+  }
+
+  .header_login_search_icon {
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 1%;
+    width: 10%;
+    height: auto;
+  }
+
+  .logIn_img,
+  .search_img {
+    width: 2.5rem;
+  }
+  /* ---------------------- */
+  /* footer */
+
+  .footerAside_logo {
+    height: 90%;
+  }
+
+  .footer_nav_cvg {
+    margin-top: 4%;
+  }
+
+  .footer_socialMedias {
+    width: 15vw;
+  }
+  .footer_socialMedia_item {
+    justify-content: center;
+  }
 }
