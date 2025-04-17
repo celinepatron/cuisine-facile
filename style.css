@@ -25,6 +25,7 @@
     margin: 20px auto;
     display: block;
 } 
+
 /* TITLE H2 H3 H4 ICON AROWS */
 h2 {
     font-size: 2.5rem;
@@ -173,6 +174,305 @@ h4 {
     justify-content: space-around;
 }
 
+/* Media query for screens with max width of 1026px */
+@media screen and (min-width:1025px) {
+    .title-sub-title-image {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+
+
+.recipe-short-description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat 1fr;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: fit-content;
+
+}
+.description,.tags{
+padding-right: px;
+}
+
+
+.bloc-head-recipe{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (2,1fr);
+    
+}
+.recipe-preparation{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+}
+}
+/* TABLETTE MIN 601 */
+.image-recipe {
+    width: 393px;
+    height: 183px;
+    border-radius: 50px;
+    margin: 20px auto;
+    display: block;
+} 
+/* TITLE H2 H3 H4 ICON AROWS */
+h2 {
+    font-size: 2.5rem;
+    color: var(--color-blue);
+    text-align:center;
+    margin: 20px 0;
+}
+.icon-direction-title{
+    display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+.title-sub-title-image{
+    align-items: center;
+}
+h3 {
+    font-size: 1.9rem;
+    color: var(--color-blue);
+    text-align: center;
+    margin: 20px 0;
+    font-weight: lighter;
+}
+h4 {
+    font-size: 1.5rem;
+    color: var(--color-blue);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* ITEMS TIMES COOKING AND REVIEWS */
+.item-cooking-times-label{
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    text-align: left;
+    margin: 20px 0;
+    font-weight: lighter;
+}
+.item-cooking-times{
+    font-size: 0.9rem;
+    color: var(--color-blue);
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bolder;
+    /* width: 25%; */
+}
+.recipe-short-description {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .star2{
+    width: 25px;
+    height: 25px;
+}
+    .reviews{
+    font-size: 15px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1REM;
+    color:#1D4758;
+}
+
+/* LIKE AND SHARE ICON */
+.img-recipe-heart-and-share-icon{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+/* DESCRITION RECIPE */
+.recipe-description{
+    align-content: center;
+    justify-content: center;
+    margin-left: 25px  ;
+    margin-right: 15px;
+}
+
+.recipe-ingredients{
+    background-color: #FFF0E5;
+    justify-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+/* GRID  */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        align-content: center;
+        justify-content: end;
+        align-items: center;
+}
+
+/* GRID PREPARATION */
+.recipe-preparation
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        
+
+.stape123{
+    display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+.icons-ingredients-preparartion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
 /* THE END MAIN RECIPE */
+
+
+/* LOGIN CONNEXION */
+
+.main-login{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+}
+
+.connexion::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("./assets/images/image-connexion.png");
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.login-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color:var(--color-white);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--color-blue);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color:var(--color-orange);
+}
+
+.extra-links {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.extra-links a {
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA MIN 800 */
+@media (min-width:601px){ 
+    .login-container {
+        padding:50px ;
+}
+.connexion::before{
+    width: auto;
+}
+}
+/* MEDIA MIN 1025 */
+@media (min-width:1025px) {
+    .login-container {
+    padding: 50px;
+}
+}
+/* FIN CONNEXION PAGE  */
 
 
