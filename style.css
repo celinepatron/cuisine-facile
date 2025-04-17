@@ -61,8 +61,8 @@ margin-top: 20px;
 .boutons-filtres{
 /* background-color:var(--color-blue); */
 margin-top: 5%;
-justify-content: space-around;
 display: flex;
+justify-content: space-around;
 flex-direction: row;    
 /* width: 50%; */
 font-size: 18px;
@@ -84,8 +84,8 @@ border-radius:8px ;
 
 .menu-filtre li{   
     /* background-color: #ffffff; */
-    padding: 10px 40px;
-   border-radius: 5px;
+padding: 10px 40px;
+border-radius: 5px;
    
 }
 
@@ -112,36 +112,36 @@ border-radius:8px ;
 
 .cards-recettes{
 position: relative;
-   background-color: var(--color-lightCream);
-   width: 40%;
+background-color: var(--color-lightCream);
+width: 40%;
    /* height: fit-content; */
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-   padding: 20px;
-   border-radius: 10px;
-   box-shadow: 1px solid #1D4758;
-   margin-top: 30px;
-   margin-left: 20px;
-   box-shadow: 1px solid var(--color-blue);
-   overflow-x: hidden;
-   overflow-y: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 1px solid #1D4758;
+margin-top: 30px;
+margin-left: 20px;
+box-shadow: 1px solid var(--color-blue);
+overflow-x: hidden;
+overflow-y: hidden;
 }
+
 .card-text{
     background-color: var(--color-white);
-    /* margin-top: 20px; */
     width: 70%;
     padding: 10px 22px;
     /* position: absolute; */
     /* bottom: -20px; */
-    
-    }
+     /* margin-top: 20px; */
+ }
 
 .cards-recettes-img{
    width: 100%;
    height:100%;
-    border-radius: 10px;
+    border-radius: 15px 15px 0 0;
     box-shadow: 2px solid var(--color-blue);
     object-fit: cover;
 }
@@ -157,9 +157,137 @@ position: relative;
 }
 
 .text-recette:hover{
-/* background-color: #F4A261; */
 background-color:var(--color-blue);
 color: var(--color-white);
+}
+
+/* SECTION CONTACT */
+.contact{
+position: relative;
+display: flex;
+flex-direction: column; 
+align-items: center;
+justify-content: center;
+background-color: rgb(225, 223, 223);
+/* width:450px ; */
+height: 700px;
+/* margin-left: 13%; */
+margin-top: 50px;
+overflow: hidden;
+z-index: 0;
+}
+
+
+.contact h2{
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-blue);
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    }
+
+    
+.contact-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--color-blue);
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+    
+    }
+
+.contact::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("./assets/images/entrees/iStock-516329534.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.contact-form-element{
+width: 100%;
+position :relative;
+margin-bottom: 25px;
+}
+
+.contact-form-element input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+    background-color:var(--color-white) ;
+    border: 2px solid var(--color-lightCream);
+    color:var(--color-blue);
+    padding-right: 18px;
+    margin-top: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+
+
+.contact-form-element textarea{
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    border-radius: 20px;
+    outline: none;
+    background-color:var(--color-white) ;
+    border: 2px solid var(--color-lightCream);
+    color: var(--color-blue);
+    margin-top: 10px;
+    font-size: 14px;
+    
+}
+
+.contact-form-element input ::placeholder{
+    color: var(--color-blue);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.fa-solid{
+position: absolute;
+transform: translateY(-200%);
+right:-25px;
+color: #f69d44;
+}
+
+
+
+.button-contact{
+  
+align-items: center;
+width: 50%;
+padding: 15px;
+border-radius:20px;
+border: 0;
+font-size: bold;
+cursor: pointer;
+border :2px solid transparent;
+background-color: var(--color-orange);
+font-size: 16px;
+font-weight: bold;
+margin-top: 3%;
+margin-left: 30%;
+color: #1D4758;
+    
+}
+
+.button-contact:hover{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    text-align: center;
 }
 
 

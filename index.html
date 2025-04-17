@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="https://kit.fontawesome.com/b3a45f72e1.js" crossorigin="anonymous"></script>
     <title>Cuisine Facile</title>
   </head>
 
@@ -11,13 +13,13 @@
     <main class="bloc-menu">
       <section class="menu-desc">
         <h2>Menu de la Semaine </h2> 
-
+      
+ 
           <p class="desc-main">
             Nous vous proposons <strong>24 recettes</strong> pour répondre à vos aspirations,
              pour <strong>mieux manger </strong>au
             quotidien.
           </p>
-   
 
     <div class="boutons-filtres">
          <ul class="menu-filtre">
@@ -28,6 +30,7 @@
         </ul>
 
     </div>
+    
  </section>
 
  <!-- debut section cards recettes -->
@@ -43,7 +46,8 @@
         <h3>Gigot d’Agneau Braisé</h3>
         <p class="texte-ligne2">Viande fondante, herbes de Provence, légumes grillés.</p> 
         <p class="texte-ligne3"><strong>12 mim </strong></strong> 600 Kcal- Portions généreuses</p>
-        </div>   
+      
+      </div>   
     </section>
    
 
@@ -116,7 +120,45 @@
           
 </div>
  <!-- fin section cards recettes -->
-    
+ 
+<!-- DEBUT SECTION CONTACT -->
+ <section class="contact">
+  <h2> Contact</h2>
+ 
+ <!-- Ligne qui englobe formulaire + map-->
+ <div class="contact-form">
+ <!-- Formulaire -->
+ 
+  <form action="#" method="post">
+ 
+     <div class="contact-form-element">
+       <label for="name">Nom - Prénom</label>
+     <input type="name" name="name" id="nom-utilisateur" placeholder="Votre Nom et Prénom">
+     <i class="fa-solid fa-user"></i>
+    </div>
+ 
+     <div class="contact-form-element">
+       <label for="mail">Votre Email</label>
+     <input type="email" name="mail" id="mail" placeholder="exemple@gmail.com">
+     <i class="fa-solid fa-envelope"></i>
+    </div>
+ 
+     <div class="contact-form-element">
+       <label for="message">Message</label>
+     <textarea name="message" id="message" cols="30" rows="7"
+      placeholder="Ecrire votre message ici"></textarea>
+      <i class="fa-solid fa-message"></i>
+     </div>
+     <input class="button-contact" type="submit" value="Envoyer">
+ 
+ </div>
+ 
+  </section>
+
+
+  <!-- FIN PAGE CONTACT -->
+
+ 
 </main>
 
   </body>
