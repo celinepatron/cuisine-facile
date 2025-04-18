@@ -93,6 +93,7 @@ body {
 .header_other_page {
   background-color: var(--color-white);
   display: flex;
+  flex-wrap: wrap;
   height: 13vh;
 }
 .header_menu {
@@ -100,12 +101,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  margin-left: 0.2rem;
+  width: 15%;
 }
 
 .logo {
-  width: 90%;
+  width: 75%;
 }
 .logo_img {
   width: 80%;
@@ -126,11 +126,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 10%;
   padding-top: 0.6rem;
 }
 .logIn_img,
 .search_img {
   width: 70%;
+}
+hr {
+  border-top: 1px solid #8DACB8;
+  color: var(--color-blue);
+  background: #8DACB8;
+  width: 100%;
+  margin-top: 0%;
+  height: 1px;
 }
 /* ---------------------- */
 
