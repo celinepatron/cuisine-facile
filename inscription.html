@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Cuisine facile</title>
+    <title>inscription</title>
   </head>
   <body>
     <header class="header_other_page">
@@ -20,11 +20,6 @@
       <a href="./index.html" class="logo">
         <img class="logo_img" src="./assets/images/logoDark.svg" alt="logo" />
       </a>
-      <nav class="headerOtherNavbar">
-        <a href="" class="headerOtherNav_link">Accueil</a>
-        <a href="" class="headerOtherNav_link">Recettes</a>
-        <a href="" class="headerOtherNav_link">Contact</a>
-      </nav>
       <div class="header_login_search_icon">
         <a href="./connexion" class="logIn">
           <img
@@ -42,8 +37,46 @@
         </a>
       </div>
     </header>
- 
-    <main></main>
+    <main class="signIn">
+      <img
+        class="bckgImgSignInImg"
+        src="./assets/images/backgroungSignIn.svg"
+        alt=""
+      />
+      <form class="signInform" method="post">
+        <h2 class="signIn_title">Inscription</h2>
+        <div class="signInForm_input">
+          <label for="firstName">Nom :*</label>
+          <input type="text" id="firstName" />
+        </div>
+        <p></p>
+        <div class="signInForm_input">
+          <label for="lastname">Prénom :*</label>
+          <input type="text" id="lastname" />
+        </div>
+        <p></p>
+        <div class="signInForm_input">
+          <label for="mail">Adresse mail :*</label>
+          <input type="email" id="mail" />
+        </div>
+        <p></p>
+        <div class="signInForm_input">
+          <label for="pass">Mot de passe :*</label>
+          <input type="password" id="pass" />
+        </div>
+        <p></p>
+        <div class="signInForm_input">
+          <label for="confirmPass">Confirmer mot de passe :*</label>
+          <input type="password" id="confirmPass" />
+        </div>
+        <p></p>
+        <div class="signInForm_input_robot">
+          <input type="checkbox" name="robot" id="robot" />
+          <label for="robot">Je ne suis pas un robot</label>
+        </div>
+        <button class="singInSubmit">Inscription</button>
+      </form>
+    </main>
     <footer>
       <aside class="footerAside_logo">
         <a class="footerAside_logo_img" href="./index.html">
