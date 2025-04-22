@@ -1,0 +1,13 @@
+@media screen and (main-width: 601px){
+
+.main{
+    align-items: center;
+    /* background-color: var(black); */
+}
+
+.h2{
+    font-size: 24px;
+}
+
+
+}
