@@ -3,49 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Cuisine facile</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cuisine Facile</title>
   </head>
+
   <body>
-    <header class="header_other_page">
-      <a class="header_menu"
-        ><img class="header_menu_logo" src="./assets/icons/Menu.png" alt="menu"
-      /></a>
-      <a href="./index.html" class="logo">
-        <img class="logo_img" src="./assets/images/logoDark.svg" alt="logo" />
-      </a>
-      <nav class="headerOtherNavbar">
-        <a href="" class="headerOtherNav_link">Accueil</a>
-        <a href="" class="headerOtherNav_link">Recettes</a>
-        <a href="" class="headerOtherNav_link">Contact</a>
-      </nav>
-      <div class="header_login_search_icon">
-        <a href="./connexion" class="logIn">
+
+         <header class="header_home">
+      <div class="headerHome_nav">
+        <a href="./index.html" class="header_homelogo">
           <img
-            class="logIn_img"
-            src="./assets/icons/logIcon.png"
-            alt="connexion"
+            class="logo_img_home"
+            src="./assets/images/logoLight.svg"
+            alt="logo"
           />
         </a>
-        <a href="./rechercher" class="search">
+        <nav class="headerHomeNavbar">
+          <a href="./index.html" class="headerHomeNav_link">Accueil</a>
+          <a href="./recette.html" class="headerHomeNav_link">Recettes</a>
+          <a href="" class="headerHomeNav_link">Contact</a>
+          <a href="" class="headerHomeNav_link">
+            <img src="./assets/icons/logIcon.png" alt="Connexion/inscription">
+          </a>
+        </nav>
+        <a class="header_menu_home">
           <img
-            class="search_img"
-            src="./assets/icons/Search.png"
-            alt="chercher"
+            class="header_menu_logo_home"
+            src="./assets/icons/menuHome.png"
+            alt="menu"
           />
         </a>
       </div>
-      <hr/>
-
+      <section class="header_home_sect_pres">
+        <p class="headerHome_sect_catphrase">
+          Envie d'un repas raffiné en famille ?
+        </p>
+        <p class="headerHome_sect_delivery">
+          Panier recettes livrés partout en France
+        </p>
+        <button class="headerHome_sect_todaysRecipe">Recette du jour</button>
+      </section>
     </header>
+
   
-    <main></main>
+    <main>
+        <main class="bloc-menu">
+      <section class="menu-desc">
+        <h2>Menu de la Semaine </h2> 
+
+          <p class="desc-main">
+            Nous vous proposons <strong>24 recettes</strong> pour répondre à vos aspirations,
+             pour <strong>mieux manger </strong>au
+            quotidien.
+          </p>
+   
+
+    <div class="boutons-filtres">
+         <ul class="menu-filtre">
+          <li ><a href="#btn-starter"></a>Entrées</li>
+          <li><a href="#btn-meal"></a>Plats</li>  
+          <li><a href="#btn-desserts"></a>Desserts</li>
+          <li><a href="#btn-browser"></a>Parcourir</li>
+        </ul>
+
+    </div>
+ </section>
+
+ <!-- debut section cards recettes -->
+  <div class="cards">
+
+
+    <section class="cards-recettes">
+      <div class="recette" >
+          <img class="cards-recettes-img" src="./assets/images/plats/iStock-908693352.jpg" alt="Tajine de poulet">
+      </div>
+
+      <div class="text-recette">
+        <h3>Gigot d’Agneau Braisé</h3>
+        <p class="texte-ligne2">Viande fondante, herbes de Provence, légumes grillés.</p> 
+        <p class="texte-ligne3"><strong>12 mim </strong></strong> 600 Kcal- Portions généreuses</p>
+        </div>   
+    </section>
+   
+
+    <section class="cards-recettes">
+      <div class="recette" >
+          <img class="cards-recettes-img" src="./assets/images/desserts/iStock-1312427122.jpg" alt="Tajine de poulet">
+      </div>
+
+      <div class="text-recette">
+        <h3>Tiramisu Marron-Chocolat</h3>
+        <p class="texte-ligne2">Crème veloutée, biscuits moelleux, chocolat intense.</p> 
+        <p class="texte-ligne3"><strong>25 mim </strong></strong> 450 Kcal</p>
+        </div>
+
+    </section>
+
+
+      <section class="cards-recettes">
+        <div class="recette" >
+            <img class="cards-recettes-img" src="./assets/images/desserts/iStock-613115478.jpg" alt="Tajine de poulet">
+        </div>
+
+        <div class="text-recette">
+          <h3>Millefeuille Festif</h3>
+          <p class="texte-ligne2">Foie gras onctueux, pain doré, gelée acidulée.</p> 
+          <p class="texte-ligne3"><strong>30 mm </strong></strong>  600 Kcal</p>
+        </div>
+     
+      </section>
+
+      <section class="cards-recettes">
+        <div class="recette" >
+            <img class="cards-recettes-img" src="./assets/images/plats/iStock-1006587840.jpg" alt="Tajine de poulet">
+        </div>
+  
+        <div class="text-recette">
+        <h3>Spaghetti alle Vongole</h3>
+        <p class="texte-ligne2">Tomates Cerises, épicées, Concassées et pimentées. </p> 
+        <p class="texte-ligne3"><strong>30 mim</strong></strong> 800 Kcal- Kids</p>
+        </div>
+      </section>
+
+
+      <section class="cards-recettes">
+        <div class="recette" >
+            <img class="cards-recettes-img" src="./assets/images/plats/iStock-1249204744.jpg" alt="Tajine de poulet">
+        </div>
+
+        <div class="text-recette">
+          <h3>Velouté de Petits Pois</h3>
+          <p class="texte-ligne2">Crémeux, végétal : Soupe chic qui réveille les sens.</p> 
+          <p class="texte-ligne3"><strong>30 mim </strong></strong> 600 Kcal- Kids</p>
+        </div>
+      </section>
+
+        <section class="cards-recettes">
+          <div class="recette" >
+              <img class="cards-recettes-img" src="./assets/images/plats/iStock-2189059607.jpg" alt="Tajine de poulet">
+          </div>
+
+          <div class="text-recette">
+        <h3>Pizza Rustica</h3>
+        <p class="texte-ligne2">Tomates Confites, Basilic Frais et Sauce Maison.</p> 
+        <p class="texte-ligne3"><strong>18 mim </strong></strong> 900 Kcal </p>
+        </div>
+        </section>  
+ </div>
+ <!-- fin section cards recettes -->
+    
+</main>
+    </main>
     <footer>
       <aside class="footerAside_logo">
         <a class="footerAside_logo_img" href="./index.html">
